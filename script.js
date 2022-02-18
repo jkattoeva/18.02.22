@@ -37,9 +37,22 @@ document.querySelector('#background').addEventListener('input', function(){
 
 // });
 
-document.querySelector('#font-size').addEventListener('input', function(){
-  h1.style.fontSize = this.value + "px";
-  this.nextSibling.textContent = h1.style.fontSize;
+// document.querySelector('#font-size').addEventListener('input', function(){
+//   h1.style.fontSize = this.value + "px";
+//   this.nextSibling.textContent = h1.style.fontSize;
+// });
+
+// document.querySelector('#bold').addEventListener('input', function(){
+//   h1.style.fontWeight = this.value;
+//   document.querySelector('#italic').addEventListener('input', function(){
+//     h1.style.fontStyle = this.value;
+//     document.querySelector('#underline').addEventListener('input', function(){
+//       h1.style.textDecoration = this.value;
+// });
+
+
+document.querySelector('#solid').addEventListener('input', function(){
+  h1.style.border = this.checked ? 'solid' : 'none';
 });
 
 
