@@ -54,5 +54,12 @@ document.querySelector('#background').addEventListener('input', function(){
 document.querySelector('#solid').addEventListener('input', function(){
   h1.style.border = this.checked ? 'solid' : 'none';
 });
+document.querySelector('#dotted').addEventListener('input', function(){
+  h1.style.border = this.checked ? 'dotted' : 'none';
+});
+document.querySelector('#dashed').addEventListener('input', function(){
+  h1.style.border = this.checked ? 'dashed' : 'none';
+});
+
 
 
